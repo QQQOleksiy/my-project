@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    border: black 1px solid;
+    background: #737171;
+    width: 49%;
+    color: white;
+}
+.all_info{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
