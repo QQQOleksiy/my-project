@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import {axiosService} from "../../services/axiosService";
+
+import {axiosUsersAll} from "../../services/axiosService";
 import User from "../User/User";
 import UserDetails from "../UserDeatails/UserDetails";
 
@@ -9,7 +10,7 @@ const Users = () => {
     const [details, setDetails] = useState(null);
 
     useEffect(() => {
-        axiosService.get('/users').then(value => value.data).then(value => console.log(setUsers([...value])))
+        axiosUsersAll.then(value => value.data).then(value => setUsers([...value]))
     }, [])
 
 

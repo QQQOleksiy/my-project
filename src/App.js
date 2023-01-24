@@ -1,6 +1,6 @@
 import Users from "./components/Users/Users";
 
-function App() {
+const App = () => {
   return (
     <div>
           <Users/>
