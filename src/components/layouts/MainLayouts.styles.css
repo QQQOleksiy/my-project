@@ -1,0 +1,13 @@
+.main_block{
+    display: flex;
+    justify-content: center;
+}
+.main_block > div{
+    width: 70%;
+    height: 700px;
+    background: aliceblue;
+    border: #03012d solid 1px;
+    box-sizing: border-box;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
