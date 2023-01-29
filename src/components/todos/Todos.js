@@ -1,14 +1,15 @@
 import React from 'react';
 
-export const Todos = ({value}) => {
-    const {userId, id, title, completed} = value
+export const Todos = ({todo}) => {
+    const {userId, id, title, completed} = todo
 
     return (
         <div>
+            <hr/>
             <div>User Id: {userId}</div>
             <div>Id: {id}</div>
             <div>Title: {title}</div>
-            <div>Completed: {completed}</div>
+            <div>Completed: {completed ? 'True' : 'False'}</div>
         </div>
     );
 };

@@ -17,7 +17,7 @@ const App = () => {
             <Route path={'/todos'} element={<TodosPage/>}/>
             <Route path={'/albums'} element={<AlbumsPage/>}/>
             <Route path={'/comments'} element={<CommentsPage/>}>
-                <Route path={'postByComment'} element={<PostByCommentPage/>}/>
+                <Route path={':postId'} element={<PostByCommentPage/>}/>
             </Route>
         </Route>
       </Routes>
