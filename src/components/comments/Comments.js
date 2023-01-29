@@ -1,7 +1,8 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 
 export const Comments = ({comment}) => {
+    const navigate = useNavigate()
 
     const {postId, id, name, email} = comment
 

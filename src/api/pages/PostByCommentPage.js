@@ -14,14 +14,17 @@ export const PostByCommentPage = () => {
         }
     }, [postId])
 
+    console.log(post)
+    if (post) {
+        return (
+            <div>
+                <div>User ID: {post.userId}</div>
+                <div>ID: {post.id}</div>
+                <div>Title: {post.title}</div>
+                <div>Body: {post.body}</div>
+            </div>
+        );
+    }
 
-    return (
-        <div>
-            <div>User ID: {post.userId}</div>
-            <div>ID: {post.id}</div>
-            <div>Title: {post.title}</div>
-            <div>Body: {post.body}</div>
-        </div>
-    );
 };
 
