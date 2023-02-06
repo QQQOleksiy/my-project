@@ -1,0 +1,9 @@
+.main-block{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hr{
+    width: 1px;
+    height: 100vh;
+    background: #000;
+}
